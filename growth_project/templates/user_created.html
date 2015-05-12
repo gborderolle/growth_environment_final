@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h2>Hi {{ user.first_name }}, your user was properly created!</h2>
+    <h2>You are now loggedin in.</h2>
+
+    <p>Click <a href="/dashboard/">here</a> to go to the main Dashboard. </p>
+
+    <p>Click <a href="/accounts/logout/">here</a> to logout. </p>
+
+{% endblock %}

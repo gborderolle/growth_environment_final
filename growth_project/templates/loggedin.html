@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block javascript %}
+
+    <script>
+        window.onload = function () {
+            load();
+        }
+
+        function load() {
+            window.setTimeout(redirect, 8000);
+        }
+        function redirect() {
+            window.location.href = "http://127.0.0.1:8000/dashboard/";
+        }
+
+    </script>
+
+{% endblock javascript %}
+
+
+{% block content %}
+
+    <h2>Welcome {{ user.first_name }}! You are now logged in!</h2>
+    <h3>You will be redirected to the Main Dashboard in a few seconds.</h3>
+
+    <p>Click <a href="/accounts/logout/">here</a> to logout. </p>
+
+{% endblock %}
