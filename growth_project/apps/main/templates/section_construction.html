@@ -9,12 +9,22 @@
     <link href="{% static 'dashboard_files/css/plugins/morris.css' %}" rel="stylesheet">
     <link href="{% static 'dashboard_files/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
 
+    <style>
+
+        #backgroundImg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+    </style>
+
 {% endblock css %}
 
 {% block content %}
 
-    <div id="divImageBackground">
-        <img id="img1" src="{% static 'section_construction_files/img/building_section.jpg' %}"/>
+    <div id="divBackground">
+        <img id="backgroundImg" src="{% static 'section_construction_files/img/building_web.jpg' %}"/>
     </div>
 
     {% block javascript %}

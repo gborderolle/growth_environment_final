@@ -32,7 +32,7 @@ def selector(request):
 
 
 def section_construction(request):
-        return render_to_response('section_construction.html')
+        return render_to_response('section_construction.html', {'user': request.user})
 
 
 """
