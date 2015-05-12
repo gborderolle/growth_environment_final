@@ -1,0 +1,24 @@
+.sidebar{
+    border: 1px solid black;
+    float: left;
+    height: 700px;
+}
+
+.chart{
+    
+border: 1px solid black;
+height: 300px;
+
+}
+
+.option{
+    border: 1px solid black;
+    height: 400px;
+
+}
+
+.nav{
+    text-align: center; 
+
+
+}

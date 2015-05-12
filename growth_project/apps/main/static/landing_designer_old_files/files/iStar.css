@@ -1,0 +1,38 @@
+﻿/* ------------------------------   CSS Document written by Bo Edlund. 12.10.2009. Copyright Insala, LLC   ----------------------------------------------- */
+/* ----------------------------------------------------------------------   BASEDESIGN   -------------------------------------------------------------------------------------- */
+
+#fixstar { position: absolute; right: 0px; bottom: 0px; text-align: left; }
+
+div > div#fixstar { position: fixed; z-index: 999 }
+
+#star {
+	width: 25px;
+	height: 25px;
+	float: right;
+	z-index: 150 !important;
+	position: absolute;
+    right: 10px;
+	bottom: 10px;
+}
+
+#star a {
+	overflow: hidden;
+	width: 20px;
+	height: 20px;
+	background-image:url("/ICM/images/iStar/istar-mini.gif");
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	text-transform: capitalize;
+	display: block;
+}
+
+
+#iStar1 { 
+	display: block; 
+	position: absolute; 
+	z-index: 500; 
+	width: 350px; 
+	height: 170px; 
+	right: 10px;
+	bottom: 10px;
+}

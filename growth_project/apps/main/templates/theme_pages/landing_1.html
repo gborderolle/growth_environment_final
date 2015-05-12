@@ -1,0 +1,286 @@
+{% extends "base_3_template.html" %}
+
+{% load static %}
+
+{% block css %}
+
+    <link href='//fonts.googleapis.com/css?family=Lobster|Roboto:400,900,700' type='text/css' rel='stylesheet'>
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="{% static 'theme_pages_files/theme_page_1/css/main-landings.css' %}" rel="stylesheet">
+    <link href="{% static 'dashboard_files/font-awesome/css/font-awesome.min.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'global_files/css/sb-admin.css' %}" rel="stylesheet">
+    <link href="{% static 'global_files/css/editable-page.css' %}" rel="stylesheet">
+    <link href="{% static 'theme_pages_files/theme_page_5/css/style.css' %}" rel="stylesheet">
+
+{% endblock css %}
+
+{% block content %}
+
+    <header class="banner navbar navbar-default navbar-static-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse"
+                        data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1 class="navbar-brand"><a href="../">Google Apps para el trabajo</a></h1>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#Inspirate">Twitter</a>
+                    </li>
+                    <li class="active">
+                        <a href="#Validate">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#Impulsate">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container-fluid no-gutter">
+        <div id="header">
+            <div class="cols-xs-12 col-sm-6" id="media">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" width="560" height="315"
+                            src="https://www.youtube.com/embed/zqKovGMx9xo" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6" id="copy">
+                <h1 class="text-center"><label>Obtenga correo electrónico para su
+                    empresa</label> <input class="clickedit" type="text"/>
+
+                    <div class="clearfix"></div>
+                </h1>
+
+                <p class="lead" id="copy_description"><label class="label-normal">Correo electrónico profesional,
+                    almacenamiento en
+                    línea, calendarios compartidos, videoconferencias y mucho más. Creado para empresas, diseñado para
+                    equipos. Los calendarios integrados, la potente búsqueda y la protección contra spam de Gmail lo
+                    ayudan a mejorar la productividad. Entre las funciones empresariales mejoradas, se ofrecen una
+                    garantía de tiempo de actividad del 99.9% y 30 GB de almacenamiento. Además, no incluye anuncios.
+                </label></p>
+
+                <input class="clickedit" type="text"/>
+
+                <div class="clearfix"></div>
+
+                <button type="button" class="btn btn-success btn-lg btn-block">Comienza Ya!</button>
+            </div>
+        </div>
+
+        <div class="col-xs-12" id="feature">
+            <div class="col-xs-12 col-sm-3 media-body">
+                <a href="#">
+
+                    <img src="{% static 'theme_pages_files/theme_page_1/img/beneficio1.png' %}" alt=""/>
+                    <!-- <img class="media-object" src="../assets/img/beneficio1.png" alt="...">-->
+                </a>
+
+                <h3 class="media-heading"><label>Correo electrónico profesional y mucho
+                    más</label><input class="clickedit"
+                                      type="text"/>
+
+                    <div class="clearfix"></div>
+                </h3>
+                <label class="label-normal">
+                    Obtenga correo electrónico personalizado (@suempresa.com), asistencia todos los días las 24 horas y
+                    30 GB de almacenamiento.
+                </label>
+                <input class="clickedit" type="text"/>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 media-body media-body">
+                <a href="#">
+                    <img class="media-object" src="{% static 'theme_pages_files/theme_page_1/img/beneficio2.png' %}"
+                         alt="...">
+                </a>
+
+                <h3 class="media-heading"><label> Libertad para trabajar desde cualquier lugar</label><input
+                        class="clickedit"
+                        type="text"/>
+
+                    <div class="clearfix"></div>
+                </h3>
+                <label class="label-normal">
+                    Cree, edite y comparta archivos esté donde esté desde su teléfono, computadora portátil o tablet.
+                </label>
+
+                <input class="clickedit" type="text"/>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="class=col-xs-12 col-sm-3 media-body">
+                <a href="#">
+                    <img class="media-object" src="{% static 'theme_pages_files/theme_page_1/img/beneficio3.png' %}"
+                         alt="...">
+                </a>
+
+                <h3 class="media-heading"><label>Seguridad y controles empresariales</label><input
+                        class="clickedit"
+                        type="text"/>
+
+                    <div class="clearfix"></div>
+                </h3>
+                <label class="label-normal">
+                    Administre los dispositivos y los datos de su empresa con herramientas que le brindan el control que
+                    necesita.
+                </label>
+
+                <input class="clickedit" type="text"/>
+
+                <div class="clearfix"></div>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-3 media-body">
+                <a href="#">
+                    <img class="media-object" src="{% static 'theme_pages_files/theme_page_1/img/beneficio4.png' %}"
+                         alt="...">
+                </a>
+
+                <h3 class="media-heading"><label>Participe en reuniones cara a cara
+                    con otras personas</label><input class="clickedit"
+                                                     type="text"/>
+
+                    <div class="clearfix"></div>
+                </h3>
+                <input class="clickedit" type="text"/>
+
+                <div class="clearfix"></div>
+                <label class="label-normal">
+                    Realice videoconferencias en alta definición mediante Hangouts con hasta 15 personas desde su
+                    computadora portátil, tablet o teléfono. Puede compartir la pantalla, hacer presentaciones y
+                    conversar mientras trabaja.
+                </label>
+
+                <input class="clickedit" type="text"/>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="col-xs-12" id="testimonios">
+            <div class="col-sm-6 col-md-4 item">
+                <div class="thumbnail">
+                    <img class="testimonial_image"
+                         src="{% static 'theme_pages_files/theme_page_1/img/crezcamos_logo.gif' %}" alt="..."
+                         style="border-radius:30px;">
+
+                    <div class="caption text-left">
+                        <h3><label>Crezcamos</label><input class="clickedit" type="text"/>
+
+                            <div class="clearfix"></div>
+                        </h3>
+
+                        <p><label class="label-normal">Avanzamos en materia de comunicación interna y aumentamos las
+                            ntegración de
+                            información. Cada
+                            día nos sprende más de las cosas que podemos hacer con Google Apps.</label><input
+                                class="clickedit" type="text"/>
+
+                        <div class="clearfix"></div>
+                        </p>
+
+                        <div class="text-right work">
+                            <a href="#"><label>Institución de servicios financieros.</label><input class="clickedit"
+                                                                                                   type="text"/>
+
+                                <div class="clearfix"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 item">
+                <div class="thumbnail">
+                    <img class="testimonial_image"
+                         src="{% static 'theme_pages_files/theme_page_1/img/cementos_logo.jpg' %}" alt="..."
+                         style="border-radius:30px;">
+
+                    <div class="caption text-left">
+                        <h3><label>Cementos tequedama</label><input class="clickedit" type="text"/>
+
+                            <div class="clearfix"></div>
+                        </h3>
+
+                        <p><label class="label-normal">Google Aps tiene los recursos necesarios para facilitar un equipo
+                            de IT pequeño, como
+                            el
+                            nuestro en hacer un óptimos trabajo.</label><input class="clickedit" type="text"/>
+
+                        <div class="clearfix"></div>
+                        </p>
+
+                        <div class="text-right work">
+                            <a href="#"><label>Productores de cemento en Colombia</label><input class="clickedit"
+                                                                                                type="text"/>
+
+                                <div class="clearfix"></div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {{ template_name }}
+    <form action="{% url 'save_template' %}" method="post"> {% csrf_token %}
+        <input type="hidden" name="template_id" value="{{ template_id }}">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="jumbotron">
+                    <h1><label>¿QUÉ ESTÁS ESPERANDO?</label><input class="clickedit" type="text"/>
+
+                        <div class="clearfix"></div>
+                    </h1>
+
+                    <p class="lead"><label class="label-normal">¿Qué estás esperando? Prueba Google Apps gratis durante
+                        30 días y optimiza la
+                        comunicación interna de tu empresa.</label><input class="clickedit" type="text"/>
+
+                    <div class="clearfix"></div>
+                    </p>
+
+                    <p>
+                        <button type="submit" class="btn btn-primary btn-lg" href="" role="button">Comienza YA!
+                        </button>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+    {% block javascript %}
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.5.1/jquery.nicescroll.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script src="{% static 'theme_pages_files/theme_page_1/js/scripts-landings-min.js' %}"></script>
+
+        <script src="{% static 'landing_designer_old_files/files/jquery.js' %}" type="text/javascript"></script>
+        <script src="{% static 'landing_designer_old_files/files/jQuery.Plugins.js' %}" type="text/javascript"></script>
+        <script src="{% static 'landing_designer_old_files/files/jquery-ui.js' %}" type="text/javascript"></script>
+        <script src="{% static 'global_files/js/editable-page.js' %}" type="text/javascript"></script>
+
+    {% endblock javascript %}
+
+
+{% endblock %}
