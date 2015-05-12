@@ -2,5 +2,4 @@
 
 @Authors:
   -Gonzalo Borderolle
-  -Jorge Giuffra
-  -Diego Martinez
+
