@@ -1,0 +1,265 @@
+{% extends "base_2.html" %}
+
+{% load static %}
+
+{% block css %}
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <link href="{% static 'selector_landing_files/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'global_files/css/sb-admin.css' %}" rel="stylesheet">
+    <link href="{% static 'dashboard_files/font-awesome/css/font-awesome.min.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'selector_landing_files/css/custom-style.css' %}" rel="stylesheet">
+
+    <link href="{% static 'dashboard_files/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'dashboard_files/css/sb-admin.css' %}" rel="stylesheet">
+    <link href="{% static 'dashboard_files/css/plugins/morris.css' %}" rel="stylesheet">
+
+    <style>
+        #video_background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            margin-top: 8%;
+        }
+
+        nav.tabs, .v6 div.meta-data {
+            background: #FFF;
+            height: 38px;
+            padding-right: 9px;
+            margin-bottom: 14px;
+            border-bottom: solid 1px #eeeded;
+            min-width: 690px;
+        }
+
+        nav.tabs .action-select span, .v6 div.meta-data .action-select span {
+            display: block;
+            padding: 0 30px 0 8px;
+            margin-top: 2px;
+            height: 28px;
+            line-height: 28px;
+        }
+
+        .action-select span {
+            font-size: 11px;
+            cursor: pointer;
+            border: solid 1px #ebebeb;
+            font-family: Verdana;
+            padding: 0 30px 0 8px;
+            position: relative;
+            margin-left: 5px;
+            height: 28px;
+            line-height: 28px;
+            background: #FFF;
+            color: #494d50;
+            display: block;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            -webkit-background-clip: padding-box;
+            -moz-background-clip: padding;
+            background-clip: padding-box;
+        }
+
+    </style>
+
+{% endblock css %}
+
+{% block content %}
+
+    <div id="page-wrapper">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Elige la mejor Landing
+                        <small>de acuerdo a tus necesidades!</small>
+                    </h1>
+                </div>
+            </div>
+            TARINGA !!!
+
+            <nav class="tabs">
+
+                <ul>
+                    <li class="active">
+                        <a href="/posts/ascenso" data-tag="trending-momentum,list-ascenso" data-tab="trending-momentum">Más
+                            populares</a>
+                    </li>
+                    <li class="">
+                        <a href="/posts/recientes" data-tag="recent,list-reciente" data-tab="recent">Lo más reciente</a>
+                    </li>
+                    <li class="crear tab-crear-post">
+                        <a href="/agregar" data-tag="," data-tab="">Recomendadas</a>
+                    </li>
+                </ul>
+
+                <div class="actions action-select v6-category">
+                    <span class="active">Todas las categorías</span>
+                    <ol style="display: none;">
+                        <li class="active">
+                            <a href="/posts">Todas las categorías</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/animaciones">Animaciones</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/apuntes-y-monografias">Apuntes y Monografías</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/arte">Arte</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/autos-motos">Autos y Motos</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/celulares">Celulares</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/ciencia-educacion">Ciencia y Educación</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/comics">Comics e Historietas</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/deportes">Deportes</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/downloads">Downloads</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/ebooks-tutoriales">E-books y Tutoriales</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/ecologia">Ecología</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/economia-negocios">Economía y Negocios</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/femme">Femme</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/hazlo-tu-mismo">Hazlo tu mismo</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/humor">Humor</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/imagenes">Imágenes</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/info">Info</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/juegos">Juegos</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/juegos-online">Juegos On-line</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/links">Links</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/linux">Linux y GNU</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/mac">Mac</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/manga-anime">Manga y Anime</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/mascotas">Mascotas</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/musica">Música</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/noticias">Noticias</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/offtopic">Off-topic</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/paranormal">Paranormal</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/recetas-y-cocina">Recetas y Cocina</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/reviews">Reviews</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/salud-bienestar">Salud y Bienestar</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/solidaridad">Solidaridad</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/taringa">Taringa!</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/turismo">Turismo</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/tv-peliculas-series">TV, Peliculas y series</a>
+                        </li>
+                        <li class="">
+                            <a href="/posts/videos">Videos On-line</a>
+                        </li>
+                    </ol>
+                </div>
+            </nav>
+
+            {% if error_message %}
+                <p><strong>{{ error_message }}</strong></p>
+
+            {% else %}
+
+                {% for one_template in templates %}
+
+                    {% if forloop.counter0|divisibleby:2 %}
+                        <div class="row template-row"> {% endif %}
+
+                <div class="col-lg-12" style="width: 50%">
+
+                    <div class="col-md-6 portfolio-item" style="width: 90%">
+                        <a href="{% url 'designer' one_template.id %} ">
+                            <img class="img-responsive"
+                                 src="{% static 'templates_files/' %}{{ one_template.previewImagePath }}">
+                        </a>
+
+                        <h3>
+                            <a href="{% url 'designer' one_template.id %}">{{ one_template.templateName }}</a>
+                        </h3>
+
+                        <p>{{ one_template.templateDescription }}</p>
+                    </div>
+
+                </div>
+
+                {% if forloop.counter|divisibleby:2 %} </div> {% endif %}
+
+                {% endfor %}
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+    {% block javascript %}
+
+        <script src="{% static 'selector_landing_files/js/jquery.js' %}"></script>
+        <script src="{% static 'selector_landing_files/js/bootstrap.min.js' %}"></script>
+
+    {% endblock javascript %}
+
+{% endblock %}
+

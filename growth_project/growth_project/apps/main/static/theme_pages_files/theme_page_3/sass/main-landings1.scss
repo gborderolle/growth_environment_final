@@ -1,0 +1,160 @@
+// Bootstrap
+@import "_bootstrap.scss";
+
+// Custom ----
+
+// Gral.
+body {
+	font-family: Roboto;
+}
+.no-gutter {
+	padding-left: 0;
+	padding-right: 0; 
+}
+
+// Header
+.navbar {
+	.container {
+		.navbar-brand {
+			font: 30px/30px Lobster; 
+			height: auto;
+			margin: 15px 20px 15px 0;
+			padding: 0;
+			vertical-align: top;
+
+			a {
+				color: #444345;
+
+				img {
+					display: inline-block;
+					height: 50px;
+					margin-right: 10px;
+				}
+
+				&:hover {
+					color: red;
+				}
+			}
+		}
+	}
+}
+
+// header
+
+#header-section{
+    margin-top: 40px;
+    
+    .logo {
+        
+        img{
+            margin: auto;   
+        }
+
+    }
+    
+    .copy{
+        text-align: center;
+        
+        .sub-header{
+            padding: 0 4em;
+            line-height: 26pt;
+        }
+    }
+}
+
+main {
+	.formulario {
+		background-color: red;
+	}
+
+	.preview {
+		background-color: blue;
+	}
+}
+
+//nav
+
+.nav {
+
+    .navbar-nav {
+        margin: 15px 0;
+
+    }
+    
+    .img-responsive {
+        width:50px;;
+    }
+}
+
+//form
+
+#form{
+    margin-top: 55px;   
+    
+    .form-inline{
+        
+        text-align: center;
+        
+        .form-group{
+
+            .form-control{
+                width:260px;
+                height:43px;
+            }
+        }
+        .success{
+                background-color: #5cb85c;
+                color: white;
+                font-size: 22px;
+                margin-left: 30px;
+        }
+    }
+}
+
+
+
+//testimonios
+
+#testimonios {
+    margin-top:100px;
+    text-align: center;
+    
+    [class*='col-'] {
+        float: none;
+        display: inline-block;
+    }
+    
+    .thumbnail {
+        height:100%;
+    }
+    
+    img{
+        border-radius: 100%;
+    }
+    
+    p {
+        height: 57px;
+        overflow: hidden;
+    }
+    
+    .work {
+        font-style:italic;
+    
+    }
+}
+
+#feature {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #eee;
+    padding: 3em 0;
+    
+    .media-object{
+        padding: 1.5em 0;
+    }  
+    
+    .media-heading{
+        padding: .5em 0;
+    }
+
+}
