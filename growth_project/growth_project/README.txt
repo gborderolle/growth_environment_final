@@ -1,4 +1,4 @@
-Proyect: Growth Square
+Project: Growth Square
 
 @Authors:
 Gonzalo Borderolle
